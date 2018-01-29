@@ -1,0 +1,19 @@
+<div class="columns color-container is-mobile">
+  {{#each colors}}
+    <div class="column color{{#if @first}} is-one-quarter{{/if}}{{#if @last}} is-one-third{{/if}}" style="background-color: {{this}}"></div>
+  {{/each}}
+</div>
+<div class="breadcrumb is-centered">
+  <ul>
+    {{#each colors}}
+      <li>{{this}}</li>
+    {{/each}}
+  </ul>
+</div>
+<h1 class="title is-4">
+  Uploaded by:
+</h1>
+<h2 class="subtitle">
+  {{user}}
+</h2>
+<a class="button" href="/">Go Back</a>
